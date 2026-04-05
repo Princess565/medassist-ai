@@ -1,0 +1,56 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - ask_fever_help
+  - ask_headache_help
+  - ask_malaria_info
+  - ask_hospital_visit
+  - emergency_help
+  - ask_prevention_tips
+  - bot_challenge
+  - ask_symptom_info
+
+entities:
+  - symptom
+  - duration
+  - severity
+
+responses:
+  utter_greet:
+    - text: "Hello, I am MedAssist AI. I provide general health guidance, not medical diagnosis."
+
+  utter_goodbye:
+    - text: "Goodbye. Stay safe and take care."
+
+  utter_fever_help:
+    - text: "Fever can be caused by many conditions. Rest, hydrate, and monitor your temperature. Seek medical care if it persists or becomes severe."
+
+  utter_headache_help:
+    - text: "Headaches may improve with rest and hydration. If severe or unusual, please consult a healthcare professional."
+
+  utter_malaria_info:
+    - text: "Malaria symptoms include fever, chills, headache, and weakness. A medical test is required for confirmation."
+
+  utter_hospital_visit:
+    - text: "Visit a hospital if symptoms are severe, persistent, or worsening, or if you experience chest pain, breathing issues, or confusion."
+
+  utter_emergency_help:
+    - text: "This may be a medical emergency. Please go to the nearest hospital immediately."
+
+  utter_prevention_tips:
+    - text: "Use mosquito nets, insect repellents, and keep your environment clean to prevent infections like malaria."
+
+  utter_iamabot:
+    - text: "I am an AI chatbot built with Rasa and Python."
+
+  utter_symptom_info:
+    - text: "I understand you mentioned a symptom. Please monitor it closely, rest, stay hydrated, and seek medical care if it becomes severe or does not improve."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+  - action_provide_symptom_guidance

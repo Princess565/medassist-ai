@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+models/
+results/
+.rasa/
+tests_backup/
+*.log

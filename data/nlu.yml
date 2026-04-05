@@ -1,0 +1,89 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - good morning
+    - hey
+    - hello there
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - talk to you later
+
+- intent: ask_fever_help
+  examples: |
+    - I have a fever
+    - what should I do for fever
+    - I am feeling hot
+    - my body temperature is high
+    - I have had fever since yesterday
+
+- intent: ask_headache_help
+  examples: |
+    - I have a headache
+    - what should I do for headache
+    - my head hurts
+    - I have severe headache
+    - how can I relieve headache
+
+- intent: ask_malaria_info
+  examples: |
+    - what are the symptoms of malaria
+    - tell me about malaria
+    - how do I know if I have malaria
+    - what causes malaria
+    - can fever be a sign of malaria
+
+- intent: ask_hospital_visit
+  examples: |
+    - when should I go to the hospital
+    - should I see a doctor
+    - when do symptoms become serious
+    - do I need medical attention
+
+- intent: emergency_help
+  examples: |
+    - I have chest pain
+    - I cannot breathe properly
+    - this is an emergency
+    - I am bleeding badly
+
+- intent: ask_prevention_tips
+  examples: |
+    - how do I prevent malaria
+    - how can I avoid infection
+    - what are prevention tips
+    - how can I stay healthy
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot
+    - are you human
+    - what are you
+
+- intent: ask_symptom_info
+  examples: |
+    - I have had [fever](symptom) for [two days](duration)
+    - my [headache](symptom) is [severe](severity)
+    - I have [chills](symptom) since [yesterday](duration)
+    - I have [mild](severity) [fever](symptom)
+    - I have been having [headache](symptom) for [three days](duration)
+    - my [fever](symptom) is [serious](severity)
+    - I have [body pain](symptom) for [one week](duration)
+    - I am feeling [weakness](symptom) since [last night](duration)
+    - I have had a [headache](symptom) for [two hours](duration)
+    - my [fever](symptom) has been [mild](severity)
+    - I am experiencing [chills](symptom)
+    - I have [severe](severity) [body pain](symptom)
+    - my [weakness](symptom) started [today](duration)
+    - I have had [fever](symptom) since [Monday](duration)
+    - I’ve been feeling hot and weak
+    - my body is burning and I feel tired
+    - sharp pain in my head since morning
+    - I think I might have malaria symptoms

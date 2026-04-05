@@ -1,0 +1,48 @@
+version: "3.1"
+
+stories:
+- story: greet
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- story: fever help
+  steps:
+    - intent: ask_fever_help
+    - action: utter_fever_help
+
+- story: headache help
+  steps:
+    - intent: ask_headache_help
+    - action: utter_headache_help
+
+- story: malaria info
+  steps:
+    - intent: ask_malaria_info
+    - action: utter_malaria_info
+
+- story: hospital visit
+  steps:
+    - intent: ask_hospital_visit
+    - action: utter_hospital_visit
+
+- story: emergency
+  steps:
+    - intent: emergency_help
+    - action: utter_emergency_help
+
+- story: prevention
+  steps:
+    - intent: ask_prevention_tips
+    - action: utter_prevention_tips
+
+- story: goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: bot challenge
+  steps:
+    - intent: bot_challenge
+    - action: utter_iamabot
+

@@ -1,0 +1,52 @@
+version: "3.1"
+
+rules:
+- rule: Say hello
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: Say goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- rule: Explain bot identity
+  steps:
+    - intent: bot_challenge
+    - action: utter_iamabot
+
+- rule: Respond to fever help
+  steps:
+    - intent: ask_fever_help
+    - action: utter_fever_help
+
+- rule: Respond to headache help
+  steps:
+    - intent: ask_headache_help
+    - action: utter_headache_help
+
+- rule: Respond to malaria info
+  steps:
+    - intent: ask_malaria_info
+    - action: utter_malaria_info
+
+- rule: Respond to hospital visit question
+  steps:
+    - intent: ask_hospital_visit
+    - action: utter_hospital_visit
+
+- rule: Respond to emergency
+  steps:
+    - intent: emergency_help
+    - action: utter_emergency_help
+
+- rule: Respond to prevention tips
+  steps:
+    - intent: ask_prevention_tips
+    - action: utter_prevention_tips
+
+- rule: Use custom action for symptom info
+  steps:
+    - intent: ask_symptom_info
+    - action: action_provide_symptom_guidance
