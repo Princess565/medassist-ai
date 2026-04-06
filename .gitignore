@@ -3,5 +3,7 @@ __pycache__/
 models/
 results/
 .rasa/
+tests/
 tests_backup/
 *.log
+*.pyc
