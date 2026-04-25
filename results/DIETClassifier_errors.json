@@ -1,0 +1,19 @@
+[
+  {
+    "text": "I have had fever since yesterday",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 23,
+        "end": 32,
+        "confidence_entity": 0.5901689529418945,
+        "value": "yesterday",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

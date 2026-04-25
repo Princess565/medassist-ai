@@ -1,9 +1,24 @@
+# Python
 .venv/
+venv/
 __pycache__/
-models/
-results/
-.rasa/
-tests/
-tests_backup/
-*.log
 *.pyc
+
+# Rasa
+models/
+.rasa/
+.cache/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Large files
+*.mp4
+*.wav
+*.zip
+*.tar.gz
+*.csv
+*.xlsx

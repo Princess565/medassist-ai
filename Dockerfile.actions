@@ -1,0 +1,9 @@
+FROM rasa/rasa-sdk:3.6.2
+
+WORKDIR /app
+
+COPY actions ./actions
+
+USER 1001
+
+CMD ["start", "--actions", "actions"]

@@ -1,0 +1,42 @@
+{
+  "duration": {
+    "precision": 0.9285714285714286,
+    "recall": 1.0,
+    "f1-score": 0.962962962962963,
+    "support": 13,
+    "confused_with": {}
+  },
+  "symptom": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 16,
+    "confused_with": {}
+  },
+  "severity": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.9714285714285714,
+    "recall": 1.0,
+    "f1-score": 0.9855072463768115,
+    "support": 34
+  },
+  "macro avg": {
+    "precision": 0.9761904761904763,
+    "recall": 1.0,
+    "f1-score": 0.9876543209876543,
+    "support": 34
+  },
+  "weighted avg": {
+    "precision": 0.9726890756302521,
+    "recall": 1.0,
+    "f1-score": 0.985838779956427,
+    "support": 34
+  },
+  "accuracy": 0.9957627118644068
+}

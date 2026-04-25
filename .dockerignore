@@ -1,0 +1,12 @@
+**
+!Dockerfile.rasa
+!Dockerfile.actions
+!docker-compose.yml
+!config.yml
+!domain.yml
+!endpoints.yml
+!credentials.yml
+!data/
+!data/**
+!actions/
+!actions/**

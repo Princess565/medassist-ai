@@ -1,0 +1,13 @@
+FROM rasa/rasa:3.6.2
+
+WORKDIR /app
+
+COPY config.yml domain.yml endpoints.yml ./
+COPY data ./data
+
+USER root
+RUN rasa train
+
+USER 1001
+
+CMD ["run", "--enable-api", "--cors", "*", "--interface", "0.0.0.0", "--port", "5005"]
